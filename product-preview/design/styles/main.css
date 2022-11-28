@@ -34,6 +34,10 @@ body {
 
 .left-portion {
   width: 50%;
+
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../images/image-product-desktop.jpg");
 }
 
 .right-portion {
@@ -44,11 +48,6 @@ body {
 
   padding: 20px;
   width: 50%;
-  height: 100%;
-}
-
-.product-picture {
-  width: 100%;
   height: 100%;
 }
 
@@ -111,4 +110,30 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 750px) {
+  .card-wrapper {
+    flex-direction: column;
+
+    width: 300px;
+    height: 600px;
+  }
+
+  .left-portion {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../../images/image-product-mobile.jpg");
+    width: 100%;
+    height: 40%;
+  }
+
+  .right-portion {
+    height: 60%;
+    width: 100%;
+  }
+
+  .right-portion > * {
+    width: 100%;
+  }
 }
